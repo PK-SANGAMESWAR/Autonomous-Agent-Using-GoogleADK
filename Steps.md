@@ -1,2 +1,9 @@
-- adk run sangu_bot
+- create folder and open in VS Code
+- Create a venv 
+- Activate venv
+- Install google adk
+- adk command for version check
+- Create agent project - adk 
+- Run the agent - terminal/Web/FastAPI Backend
+- Use litellm library
 - 
