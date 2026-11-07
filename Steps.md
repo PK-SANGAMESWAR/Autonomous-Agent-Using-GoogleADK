@@ -6,4 +6,3 @@
 - Create agent project - adk 
 - Run the agent - terminal/Web/FastAPI Backend
 - Use litellm library
-- 
