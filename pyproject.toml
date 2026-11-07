@@ -1,0 +1,10 @@
+[project]
+name = "autonomous-agent-using-googleadk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=2.14.0",
+    "ipykernel>=7.4.0",
+]

@@ -1,0 +1,6 @@
+- create folder and open in VS Code
+- Create a venv 
+- Activate venv
+- Install google adk
+- adk command for version check
+- Create agent project - adk 
