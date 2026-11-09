@@ -18,6 +18,8 @@ Approach: first explore Google ADK, then progress steadily to more complex imple
   - `__init__.py` - exposes `agent` so ADK can discover `root_agent`
   - `agent.py` - defines `root_agent` (LiteLLM `gpt-4.1-mini`, temperature 0.3, 800 max output tokens)
   - `.gitignore` - ignores `.env` and `.adk/`
+- `google_agent/` - ADK agent with the built-in `google_search` tool (needs a Gemini model, `gemini-3.5-flash`)
+- `code_execution_agent/` - ADK agent that writes and runs Python via `BuiltInCodeExecutor` (needs a Gemini model, `gemini-3.5-flash`)
 - `main.py` - placeholder entry point (unused by ADK)
 - `Steps.md` - personal notes on the ADK setup steps
 - `.claude/rules/` - project rules (code style, testing, security)
