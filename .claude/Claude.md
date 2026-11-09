@@ -20,6 +20,8 @@ Approach: first explore Google ADK, then progress steadily to more complex imple
   - `.gitignore` - ignores `.env` and `.adk/`
 - `google_agent/` - ADK agent with the built-in `google_search` tool (needs a Gemini model, `gemini-3.5-flash`)
 - `code_execution_agent/` - ADK agent that writes and runs Python via `BuiltInCodeExecutor` (needs a Gemini model, `gemini-3.5-flash`)
+- `tavily_agent/` - ADK agent that searches the web with Tavily (`langchain-tavily`'s `TavilySearch`, 5 general results) wrapped in ADK's `LangchainTool`; uses `gemini-3.5-flash`, needs `TAVILY_API_KEY` in `tavily_agent/.env`
+- `tests/` - pytest tests (`test_tavily_agent.py`)
 - `main.py` - placeholder entry point (unused by ADK)
 - `Steps.md` - personal notes on the ADK setup steps
 - `.claude/rules/` - project rules (code style, testing, security)
@@ -28,7 +30,7 @@ Approach: first explore Google ADK, then progress steadily to more complex imple
 - Install: `uv sync`
 - Run (terminal): `uv run adk run sangu_bot`
 - Run (web UI): `uv run adk web`
-- Test: not set up yet (no tests exist)
+- Test: `uv run pytest` (pytest is a dev dependency; config in `pyproject.toml`)
 
 Requires `OPENAI_API_KEY` in `sangu_bot/.env` (git-ignored).
 
